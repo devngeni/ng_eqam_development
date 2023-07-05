@@ -1,9 +1,11 @@
-import Navbar from "@/components/Navbar/Navbar";
+import Team from "./Team";
+import ContactUs from "./ContactUs";
 
 export default function Home() {
   return (
     <>
-      <Navbar />
+      <ContactUs />
+      <Team />
     </>
   );
 }
