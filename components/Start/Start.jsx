@@ -8,7 +8,7 @@ const TypedMessage = ({ text }) => {
   useEffect(() => {
     const typed = new Typed(elRef.current, {
       strings: [text],
-      typeSpeed: 60,
+      typeSpeed: 90,
     });
 
     return () => {
@@ -27,10 +27,6 @@ const Start = () => {
         text="We back visionary teams building the next generation of decentralized
         technologies"
       />
-      {/* <h1>
-        We back visionary teams building the next generation of decentralized
-        technologies
-      </h1> */}
     </div>
   );
 };
