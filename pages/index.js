@@ -20,9 +20,6 @@ export default function Home() {
     <>
       <Navbar />
       <Start />
-      <ContactUs />
-      <Team />
-      <About />
     </>
   );
 }
