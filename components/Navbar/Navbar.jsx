@@ -33,6 +33,10 @@ const Navbar = () => {
     return router.pathname === path;
   };
 
+  const NavigateTopath = (path) => {
+    router.push(path);
+  };
+
   const { NavContainer, Nav, navButton, active } = styles;
 
   return (
@@ -40,13 +44,18 @@ const Navbar = () => {
       <HeadMetaData />
       <div className={NavContainer}>
         <div className={Nav}>
-          <Logo src="/EQLogo.png" alt="EQ Logo" />
+          <Logo
+            src="/EQLogo.png"
+            alt="EQ Logo"
+            onClick={() => NavigateTopath("/")}
+          />
           {navigationItems.map((item) => (
             <button
               key={item.path}
               className={`${navButton} ${
                 isActivePath(item.path) ? active : ""
               }`}
+              onClick={() => NavigateTopath(item.path)}
             >
               {item.label}
             </button>
