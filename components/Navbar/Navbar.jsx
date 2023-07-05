@@ -4,7 +4,7 @@ import { useRouter } from "next/router";
 import { Logo } from "./Image";
 
 const navigationItems = [
-  { path: "/", label: "About EQ" },
+  { path: "/aboutEq", label: "ABOUT EQ" },
   { path: "/team", label: "TEAM" },
   { path: "/portfolio", label: "PORTFOLIO" },
   { path: "/research", label: "RESEARCH" },
