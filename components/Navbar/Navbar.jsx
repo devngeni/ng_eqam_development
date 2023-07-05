@@ -9,7 +9,7 @@ const navigationItems = [
   { path: "/Team", label: "TEAM" },
   { path: "/Portfolio", label: "PORTFOLIO" },
   { path: "/Research", label: "RESEARCH" },
-  { path: "/ContactUS", label: "CONTACT US" },
+  { path: "/ContactUs", label: "CONTACT US" },
   { path: "/Jobs", label: "JOBS" },
 ];
 
