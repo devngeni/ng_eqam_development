@@ -31,9 +31,13 @@
   font-weight: 700;
   line-height: 21px;
 }
-@media screen and (max-width: 450px) {
-  .about {
-    width: 70vw;
-    margin-left: 1%;
+
+@media screen and (max-width: 899px) {
+  .about_container {
+    left: 10px;
+    width: 100vw;
+  }
+  .about{
+    width: 90vw;
   }
 }
