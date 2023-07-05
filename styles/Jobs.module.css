@@ -1,0 +1,27 @@
+.container {
+  position: absolute;
+  width: 80vw;
+  right: 20vw;
+  height: 900px;
+  overflow-y: scroll;
+  background-color: blue;
+}
+.content {
+  max-width: 1250px;
+  height: auto;
+}
+.content_head {
+  display: flex;
+  width: 415.36px;
+  margin-top: 155px;
+  height: 70px;
+  flex-direction: column;
+  justify-content: center;
+  flex-shrink: 0;
+  color: #414141;
+  font-size: 72px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 93.6px;
+}
