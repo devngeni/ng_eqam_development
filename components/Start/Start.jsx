@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import styles from "./Start.module.css";
 import Typed from "typed.js";
+import { Logo } from "../EqamLogo";
 
 const TypedMessage = ({ text }) => {
   const elRef = useRef(null);
@@ -20,7 +21,7 @@ const TypedMessage = ({ text }) => {
 };
 
 const Start = () => {
-  const { StartPage } = styles;
+  const { StartPage, EqamLogo } = styles;
 
   const [isServer, setIsServer] = useState(false);
   useEffect(() => {
@@ -30,8 +31,12 @@ const Start = () => {
   if (!isServer) {
     return null;
   }
+
   return (
     <div className={StartPage}>
+      <div className={EqamLogo}>
+        <Logo src="/EQLogo.png" alt="EQAM Logo" />
+      </div>
       <TypedMessage
         text="We back visionary teams building the next generation of decentralized
         technologies"
