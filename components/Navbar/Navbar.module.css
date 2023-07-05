@@ -1,0 +1,38 @@
+.NavContainer {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20vw;
+  height: 100vh;
+  /* background-color: rgb(196, 58, 16); */
+}
+.Nav {
+  /* background-color: rgb(196, 118, 16); */
+  width: inherit;
+  height: auto;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 20px;
+}
+
+.navButton {
+  padding: 13px;
+  font-size: 11px;
+  margin-top: 20px;
+  cursor: pointer;
+  border: none;
+  transition: opacity 0.3s;
+  letter-spacing: 2px;
+  background: none;
+  font-family: Inter;
+}
+
+.navButton:hover {
+  text-decoration: underline;
+}
+.navButton.active {
+  border: 1px solid black;
+}
