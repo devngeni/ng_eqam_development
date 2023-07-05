@@ -38,7 +38,7 @@ const Navbar = () => {
     router.push(path);
   };
 
-  const { NavContainer, Nav, navButton, active } = styles;
+  const { NavContainer, Nav, navButton, active, NavMobileIcon } = styles;
 
   const [isServer, setIsServer] = useState(false);
 
@@ -72,6 +72,7 @@ const Navbar = () => {
             </button>
           ))}
         </div>
+        <div className={NavMobileIcon}>---</div>
       </div>
     </>
   );
