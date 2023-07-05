@@ -1,4 +1,4 @@
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 import styles from "./Start.module.css";
 import Typed from "typed.js";
 
@@ -21,6 +21,15 @@ const TypedMessage = ({ text }) => {
 
 const Start = () => {
   const { StartPage } = styles;
+
+  const [isServer, setIsServer] = useState(false);
+  useEffect(() => {
+    setIsServer(true);
+  }, []);
+
+  if (!isServer) {
+    return null;
+  }
   return (
     <div className={StartPage}>
       <TypedMessage
