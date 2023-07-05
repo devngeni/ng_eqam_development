@@ -3,6 +3,7 @@ import ContactUs from "./ContactUs";
 import Navbar from "@/components/Navbar/Navbar";
 import Start from "@/components/Start/Start";
 import { useEffect, useState } from "react";
+import About from "./About";
 
 export default function Home() {
   const [isServer, setIsServer] = useState(false);
@@ -17,10 +18,11 @@ export default function Home() {
 
   return (
     <>
-      <ContactUs />
-      <Team />
       <Navbar />
       <Start />
+      <ContactUs />
+      <Team />
+      <About />
     </>
   );
 }
