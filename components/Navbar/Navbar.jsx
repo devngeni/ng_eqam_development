@@ -1,15 +1,16 @@
 import Head from "next/head";
 import styles from "./Navbar.module.css";
 import { useRouter } from "next/router";
-import { Logo } from "./Image";
+import { Logo } from "../EqamLogo";
+import { useEffect, useState } from "react";
 
 const navigationItems = [
-  { path: "/aboutEq", label: "ABOUT EQAM" },
-  { path: "/team", label: "TEAM" },
-  { path: "/portfolio", label: "PORTFOLIO" },
-  { path: "/research", label: "RESEARCH" },
-  { path: "/contact", label: "CONTACT US" },
-  { path: "/jobs", label: "JOBS" },
+  { path: "/About", label: "ABOUT EQAM" },
+  { path: "/Team", label: "TEAM" },
+  { path: "/Portfolio", label: "PORTFOLIO" },
+  { path: "/Research", label: "RESEARCH" },
+  { path: "/ContactUS", label: "CONTACT US" },
+  { path: "/Jobs", label: "JOBS" },
 ];
 
 const HeadMetaData = () => {
@@ -38,6 +39,16 @@ const Navbar = () => {
   };
 
   const { NavContainer, Nav, navButton, active } = styles;
+
+  const [isServer, setIsServer] = useState(false);
+
+  useEffect(() => {
+    setIsServer(true);
+  }, []);
+
+  if (!isServer) {
+    return null;
+  }
 
   return (
     <>

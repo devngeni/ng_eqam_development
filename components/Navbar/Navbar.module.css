@@ -36,3 +36,20 @@
 .navButton.active {
   border: 1px solid black;
 }
+
+/* Navbar at Small screens 899px and below*/
+@media screen and (min-width: 900px) {
+  .NavMobile {
+    display: none;
+  }
+}
+@media screen and (max-width: 899px) {
+  .Nav {
+    display: none;
+  }
+  .NavMobile {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+  }
+}
