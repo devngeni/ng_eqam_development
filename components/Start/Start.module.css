@@ -28,11 +28,19 @@
   .StartPage {
     left: 0;
     width: 100vw;
+    flex-direction: column;
   }
   .StartPage h1 {
     width: 80%;
   }
   .EqamLogo {
-    display: none;
+    position: relative;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 599px) {
+  .StartPage h1 {
+    font-size: 30px;
   }
 }

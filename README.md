@@ -1,4 +1,3 @@
-
 ## Ng_eqam_Development
 
 First, run the development server:
@@ -10,5 +9,3 @@ yarn dev
 # or
 pnpm dev
 ```
-
-
