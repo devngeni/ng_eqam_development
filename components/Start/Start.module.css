@@ -18,3 +18,21 @@
   line-height: 1.3em;
   font-family: Inter;
 }
+@media screen and (min-width: 900px) {
+  .EqamLogo {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 899px) {
+  .StartPage {
+    left: 0;
+    width: 100vw;
+  }
+  .StartPage h1 {
+    width: 80%;
+  }
+  .EqamLogo {
+    display: none;
+  }
+}
