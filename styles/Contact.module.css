@@ -43,3 +43,21 @@
   color: rgba(9, 106, 208, 1);
 }
 
+@media screen and (max-width: 899px) {
+  .contact_container {
+    left: 3%;
+    width: 100vw;
+  }
+  .contact_heading {
+    width: 415.36px;
+    margin-top: 155px;
+    font-size: 52px;
+  }
+}
+@media screen and (max-width: 400px) {
+  .paragragh {
+    /* margin-top: 33.4px; */
+    color: #414141;
+    font-size: 13px;
+  }
+}
