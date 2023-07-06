@@ -1,9 +1,14 @@
-import React from 'react'
+import Navbar from "@/components/Navbar/Navbar";
+import styles from "@/styles/Team.module.css";
 
 const Team = () => {
+  const { team_container } = styles;
   return (
-    <div>Team</div>
-  )
-}
+    <>
+      <Navbar />
+      <div className={team_container}></div>
+    </>
+  );
+};
 
-export default Team
+export default Team;
