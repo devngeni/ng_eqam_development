@@ -100,3 +100,11 @@
     transform: rotate(45deg);
   }
 }
+
+@media screen and (max-width: 299px) {
+  .NavMobile {
+    right: auto;
+    width: 95%;
+    margin: auto;
+  }
+}

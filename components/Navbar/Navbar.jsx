@@ -1,4 +1,3 @@
-import Head from "next/head";
 import styles from "./Navbar.module.css";
 import { useRouter } from "next/router";
 import { Logo } from "../EqamLogo";
@@ -6,6 +5,7 @@ import { useEffect, useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import useOutsideClick from "@/Helpers/CloseModal";
+import HeadMetaData from "../HeadMetaData";
 
 const navigationItems = [
   { path: "/", label: "HOME" },
@@ -17,49 +17,38 @@ const navigationItems = [
   { path: "/Jobs", label: "JOBS" },
 ];
 
-const HeadMetaData = () => {
-  const router = useRouter();
-  const pageTitle = `EQAM Capital | ${router.pathname.replace("/", "")}`;
-  return (
-    <Head>
-      <title>{pageTitle} </title>
-      <meta
-        name="description"
-        content="Building the Future of Web3 Technology in East Africa and Beyond"
-      />
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-      <link rel="icon" href="/favicon.ico" />
-    </Head>
-  );
-};
+const {
+  NavContainer,
+  Nav,
+  navButton,
+  active,
+  NavMenuIcon,
+  NavMobile,
+  mobile_menu_arrow,
+} = styles;
 
 const Navbar = () => {
   const router = useRouter();
+
+  // Check if the current path is active
   const isActivePath = (path) => {
     return router.pathname === path;
   };
 
-  const NavigateTopath = (path) => {
+  // Navigate to a specific path
+  const NavigateToPath = (path) => {
     router.push(path);
   };
-
-  const {
-    NavContainer,
-    Nav,
-    navButton,
-    active,
-    NavMenuIcon,
-    NavMobile,
-    mobile_menu_arrow,
-  } = styles;
 
   const [isOpen, setIsOpen] = useState(false);
   const [isServer, setIsServer] = useState(false);
 
+  // Toggle the mobile menu
   const toggleMobileMenu = () => {
     setIsOpen(!isOpen);
   };
 
+  // Reference for handling clicks outside the mobile menu
   const modalContainerRef = useOutsideClick(toggleMobileMenu);
 
   useEffect(() => {
@@ -75,32 +64,38 @@ const Navbar = () => {
       <HeadMetaData />
       <div className={NavContainer}>
         <div className={Nav}>
+          {/* Logo */}
           <Logo
             src="/EQLogo.png"
             alt="EQ Logo"
-            onClick={() => NavigateTopath("/")}
+            onClick={() => NavigateToPath("/")}
           />
+
+          {/* Navigation buttons */}
           {navigationItems.slice(1, 7).map((item, index) => (
             <button
               key={index}
               className={`${navButton} ${
                 isActivePath(item.path) ? active : ""
               }`}
-              onClick={() => NavigateTopath(item.path)}
+              onClick={() => NavigateToPath(item.path)}
             >
               {item.label}
             </button>
           ))}
         </div>
         <div className={NavMenuIcon} onClick={toggleMobileMenu}>
+          {/* Menu Icon */}
           {isOpen ? <CloseIcon /> : <MenuIcon />}
         </div>
         {isOpen && (
           <div className={NavMobile} ref={modalContainerRef}>
             <div className={mobile_menu_arrow} />
+
+            {/* Mobile Navigation */}
             {navigationItems.map((item, index) => (
               <div key={index}>
-                <h3 onClick={() => NavigateTopath(item.path)}>{item.label}</h3>
+                <h3 onClick={() => NavigateToPath(item.path)}>{item.label}</h3>
               </div>
             ))}
           </div>
