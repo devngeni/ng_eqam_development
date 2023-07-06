@@ -38,7 +38,7 @@
 
 /* Navbar at Small screens 899px and below*/
 @media screen and (min-width: 900px) {
-  .NavMobile {
+  .NavMobileIcon {
     display: none;
   }
 }
