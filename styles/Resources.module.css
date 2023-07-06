@@ -42,7 +42,7 @@
   background-color: #fff;
   border-radius: 8px;
   margin-top: 3vh;
-  margin-bottom: 7vh;
+  margin-bottom: 2vh;
   padding: 4vh 3vw;
   transition: box-shadow .2s;
   box-shadow: 0 2px 20px rgba(0, 0, 0, .1);
@@ -98,9 +98,8 @@
   .resource_header {
     font-size: 52px;
   }
-}
-@media screen and (max-width: 500px) {
-  .article_wrapper {
+  .inline_block{
     width: 80vw;
   }
 }
+
