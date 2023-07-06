@@ -1,10 +1,15 @@
 .container {
   position: absolute;
   width: 80vw;
+  left: 20vw;
+  height: 900px;
+  overflow-y: scroll;
+  background-color: #fff;
   right: 20vw;
   height: 900px;
   overflow-y: scroll;
   background-color: blue;
+
 }
 .content {
   max-width: 1250px;
@@ -24,4 +29,28 @@
   font-style: normal;
   font-weight: 700;
   line-height: 93.6px;
+}
+
+.Rec1 {
+  position: fixed;
+  width: 1278px;
+  height: 74px;
+  top: 269px;
+  left: 430px;
+  right: 162px;
+  background: #e4ebed;
+}
+.Text2 {
+  width: 327px;
+  position: absolute;
+  height: 23px;
+  top: 294px;
+  left: 475px;
+  font-family: Inter;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #000000;
 }
