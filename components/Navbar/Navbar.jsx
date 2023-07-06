@@ -1,6 +1,6 @@
 import styles from "./Navbar.module.css";
 import { useRouter } from "next/router";
-import { Logo } from "../EqamLogo";
+import { Logo } from "../ImagesStyles";
 import { useEffect, useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
