@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import styles from "./Start.module.css";
 import Typed from "typed.js";
-import { Logo } from "../EqamLogo";
+import { Logo } from "../ImagesStyles";
 
 const TypedMessage = ({ text }) => {
   const elRef = useRef(null);
