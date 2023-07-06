@@ -11,3 +11,8 @@ export const MemberImg = styled("img")({
   height: "100%",
   borderRadius: "10px 10px 0 0",
 });
+
+export const LinkIcon = styled("img")({
+  width: "100%",
+  height: "100%",
+});
