@@ -1,5 +1,5 @@
 .about_container {
-  position: absolute;
+  position: relative;
   width: 80vw;
   left: 20vw;
   margin-top: 170.69px;
@@ -46,7 +46,6 @@
     font-size: 13px;
   }
   .span_text {
-  font-size: 16px;
-
+    font-size: 16px;
   }
 }
