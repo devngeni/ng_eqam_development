@@ -8,16 +8,20 @@
   justify-content: center;
   align-items: center;
 }
-.StartPage h1 {
-  color: #414141;
+
+.textWrapper {
   width: 60%;
   text-align: center;
+}
+.textWrapper h1 {
+  color: #414141;
   letter-spacing: 2px;
   font-size: 42px;
   font-weight: 300;
   line-height: 1.3em;
   font-family: Inter;
 }
+
 @media screen and (min-width: 900px) {
   .EqamLogo {
     display: none;

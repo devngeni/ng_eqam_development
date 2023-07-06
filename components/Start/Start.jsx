@@ -21,7 +21,7 @@ const TypedMessage = ({ text }) => {
 };
 
 const Start = () => {
-  const { StartPage, EqamLogo } = styles;
+  const { StartPage, EqamLogo, textWrapper } = styles;
 
   const [isServer, setIsServer] = useState(false);
   useEffect(() => {
@@ -37,10 +37,12 @@ const Start = () => {
       <div className={EqamLogo}>
         <Logo src="/EQLogo.png" alt="EQAM Logo" />
       </div>
-      <TypedMessage
-        text="We back visionary teams building the next generation of decentralized
+      <div className={textWrapper}>
+        <TypedMessage
+          text="We back visionary teams building the next generation of decentralized
         technologies"
-      />
+        />
+      </div>
     </div>
   );
 };
