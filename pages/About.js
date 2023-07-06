@@ -1,4 +1,5 @@
 import Navbar from "@/components/Navbar/Navbar";
+import style from "../styles/About.module.css";
 
 const About = () => {
   const { about_container, about, span_text } = style;
