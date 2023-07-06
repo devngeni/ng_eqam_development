@@ -20,7 +20,7 @@
   font-size: 14px;
   font-family: Inter;
   font-style: normal;
-  font-weight: 500;
+  font-weight: 300;
   line-height: 21px;
 }
 .span_text {
@@ -37,7 +37,16 @@
     left: 10px;
     width: 100vw;
   }
-  .about{
+  .about {
     width: 90vw;
+  }
+}
+@media screen and (max-width: 400px) {
+  .about {
+    font-size: 13px;
+  }
+  .span_text {
+  font-size: 16px;
+
   }
 }

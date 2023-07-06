@@ -1,5 +1,5 @@
 .contact_container {
-  position: absolute;
+  position: relative;
   width: 80vw;
   left: 20vw;
   height: 900px;
@@ -7,7 +7,6 @@
   /* background-color: red; */
 }
 .content {
-  max-width: 1250px;
   height: auto;
 }
 .contact_heading {
@@ -49,15 +48,18 @@
     width: 100vw;
   }
   .contact_heading {
-    width: 415.36px;
     margin-top: 155px;
     font-size: 52px;
   }
 }
 @media screen and (max-width: 400px) {
+  .contact_heading {
+    margin-top: 155px;
+    font-size: 42px;
+  }
   .paragragh {
     /* margin-top: 33.4px; */
     color: #414141;
-    font-size: 13px;
+    font-size: 12px;
   }
 }
