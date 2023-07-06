@@ -1,0 +1,15 @@
+.blog_container {
+  position: relative;
+  left: 20vw;
+  width: 80vw;
+  height: auto;
+}
+.blog_header {
+  display: flex;
+  flex-wrap: wrap;
+  width: 60vw;
+  height: auto;
+  color: #414141;
+  font-size: 52px;
+  margin: 10px 0px 20px;
+}
