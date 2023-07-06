@@ -54,7 +54,7 @@
 .appContainer {
   /* position: absolute; */
   /* background-color: #ffffff; */
-  width: 100%;
+  width: 96%;
   height: auto;
   display: flex;
   flex-wrap: wrap;
@@ -73,7 +73,6 @@
   font-weight: 400;
   line-height: 20px;
   margin: 9.1px;
-  
 }
 /* .P1container {
   display: flex;
@@ -118,3 +117,42 @@
   display: flex;
   flex-direction: column;
 } */
+@media screen and (max-width: 899px) {
+  .content_header {
+    font-size: 69px;
+  }
+  .Container {
+    width: 100vw;
+    left: 5%;
+  }
+  .mainContainer {
+    width: 90vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .content_header {
+    font-size: 59px;
+  }
+  .title {
+    font-size: 30px;
+  }
+  .linkContainers {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .mainContainer {
+    margin-top: 20px;
+  }
+  .content_header {
+    font-size: 50px;
+  }
+  .title {
+    font-size: 21px;
+  }
+  .linkContainers {
+    font-size: 16px;
+  }
+}
