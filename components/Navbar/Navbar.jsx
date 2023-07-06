@@ -5,8 +5,10 @@ import { Logo } from "../EqamLogo";
 import { useEffect, useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
+import useOutsideClick from "@/Helpers/CloseModal";
 
 const navigationItems = [
+  { path: "/", label: "HOME" },
   { path: "/About", label: "ABOUT EQAM" },
   { path: "/Team", label: "TEAM" },
   { path: "/Portfolio", label: "PORTFOLIO" },
@@ -41,10 +43,24 @@ const Navbar = () => {
     router.push(path);
   };
 
-  const { NavContainer, Nav, navButton, active, NavMenuIcon, NavMobile } =
-    styles;
+  const {
+    NavContainer,
+    Nav,
+    navButton,
+    active,
+    NavMenuIcon,
+    NavMobile,
+    mobile_menu_arrow,
+  } = styles;
 
+  const [isOpen, setIsOpen] = useState(false);
   const [isServer, setIsServer] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
+  const modalContainerRef = useOutsideClick(toggleMobileMenu);
 
   useEffect(() => {
     setIsServer(true);
@@ -64,9 +80,9 @@ const Navbar = () => {
             alt="EQ Logo"
             onClick={() => NavigateTopath("/")}
           />
-          {navigationItems.map((item) => (
+          {navigationItems.slice(1, 7).map((item, index) => (
             <button
-              key={item.path}
+              key={index}
               className={`${navButton} ${
                 isActivePath(item.path) ? active : ""
               }`}
@@ -76,11 +92,19 @@ const Navbar = () => {
             </button>
           ))}
         </div>
-        <div className={NavMenuIcon}>
-          <MenuIcon />
-          <CloseIcon />
+        <div className={NavMenuIcon} onClick={toggleMobileMenu}>
+          {isOpen ? <CloseIcon /> : <MenuIcon />}
         </div>
-        <div className={NavMobile}></div>
+        {isOpen && (
+          <div className={NavMobile} ref={modalContainerRef}>
+            <div className={mobile_menu_arrow} />
+            {navigationItems.map((item, index) => (
+              <div key={index}>
+                <h3 onClick={() => NavigateTopath(item.path)}>{item.label}</h3>
+              </div>
+            ))}
+          </div>
+        )}
       </div>
     </>
   );
