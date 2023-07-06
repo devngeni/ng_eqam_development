@@ -21,3 +21,9 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
+.ContainerWrapper {
+  position: relative;
+  width: 100vw;
+  height: auto;
+}
