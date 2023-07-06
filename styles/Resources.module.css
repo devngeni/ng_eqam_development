@@ -62,12 +62,12 @@
 }
 
 .paragraph_7 {
-  color: rgba(65, 65, 65, 0.5);
+  color: rgba(65, 65, 65, 0.50);
   font-size: 13px;
   font-family: Inter;
   font-style: normal;
   font-weight: 300;
-  line-height: 16px;
+  line-height: 20px;
   padding: 0, 0, 10px;
 }
 
@@ -96,7 +96,32 @@
   .resource_header {
     font-size: 52px;
   }
-  .inline_block{
+  .inline_block {
     width: 88vw;
+  }
+}
+@media screen and (max-width: 600px) {
+  .resource_header {
+    font-size: 47px;
+    line-height: 60.6px;
+  }
+  .heading_3 {
+    font-size: 25px;
+    line-height: 34px;
+  }
+  .paragraph_7 {
+    font-size: 14px;
+  line-height: 20px;
+
+  }
+}
+@media screen and (max-width: 300px) {
+  .resource_header {
+    font-size: 37px;
+    line-height: 53.6px;
+  }
+  .heading_3 {
+    font-size: 20px;
+    line-height: 29px;
   }
 }
