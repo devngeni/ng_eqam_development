@@ -8,8 +8,6 @@
   right: 20vw;
   height: 900px;
   overflow-y: scroll;
-  background-color: #FFFFFF;
-
 }
 .content {
   max-width: 1250px;
@@ -17,40 +15,33 @@
 }
 .content_head {
   display: flex;
-  width: 415.36px;
+  width: fit-content;
   margin-top: 155px;
-  height: 70px;
-  flex-direction: column;
-  justify-content: center;
-  flex-shrink: 0;
   color: #414141;
   font-size: 72px;
   font-family: Inter;
   font-style: normal;
   font-weight: 700;
-  line-height: 93.6px;
+  line-height: normal;
 }
-
 .Rec1 {
-  position: fixed;
-  width: 1278px;
+  position: relative;
+  width: 90%;
   height: 74px;
-  top: 269px;
-  left: 430px;
+  left: 0;
   right: 162px;
-  background: #e4ebed;
+  background: #E4EBED;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .Text2 {
-  width: 327px;
-  position: absolute;
+  width: fit-content;
   height: 23px;
-  top: 294px;
-  left: 475px;
   font-family: Inter;
   font-size: 24px;
   font-weight: 300;
   line-height: 23px;
-  letter-spacing: 0em;
-  text-align: left;
   color: #000000;
 }
