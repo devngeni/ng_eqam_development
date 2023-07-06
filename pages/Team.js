@@ -1,9 +1,12 @@
-import React from 'react'
+import Navbar from "@/components/Navbar/Navbar";
 
 const Team = () => {
   return (
-    <div>Team</div>
-  )
-}
+    <>
+      <Navbar />
+      <div>Team</div>
+    </>
+  );
+};
 
-export default Team
+export default Team;
