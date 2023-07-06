@@ -3,6 +3,8 @@ import styles from "./Navbar.module.css";
 import { useRouter } from "next/router";
 import { Logo } from "../EqamLogo";
 import { useEffect, useState } from "react";
+import MenuIcon from "@mui/icons-material/Menu";
+import CloseIcon from "@mui/icons-material/Close";
 
 const navigationItems = [
   { path: "/About", label: "ABOUT EQAM" },
@@ -14,10 +16,11 @@ const navigationItems = [
 ];
 
 const HeadMetaData = () => {
-  // const router = useRouter();
+  const router = useRouter();
+  const pageTitle = `EQAM Capital | ${router.pathname.replace("/", "")}`;
   return (
     <Head>
-      <title>Eq_eqam_Development </title>
+      <title>{pageTitle} </title>
       <meta
         name="description"
         content="Building the Future of Web3 Technology in East Africa and Beyond"
@@ -38,7 +41,8 @@ const Navbar = () => {
     router.push(path);
   };
 
-  const { NavContainer, Nav, navButton, active, NavMobileIcon } = styles;
+  const { NavContainer, Nav, navButton, active, NavMenuIcon, NavMobile } =
+    styles;
 
   const [isServer, setIsServer] = useState(false);
 
@@ -72,7 +76,11 @@ const Navbar = () => {
             </button>
           ))}
         </div>
-        <div className={NavMobileIcon}>---</div>
+        <div className={NavMenuIcon}>
+          <MenuIcon />
+          <CloseIcon />
+        </div>
+        <div className={NavMobile}></div>
       </div>
     </>
   );

@@ -38,7 +38,8 @@
 
 /* Navbar at Small screens 899px and below*/
 @media screen and (min-width: 900px) {
-  .NavMobileIcon {
+  .NavMobile,
+  .NavMenuIcon {
     display: none;
   }
 }
@@ -50,9 +51,9 @@
     width: 100vw;
     height: auto;
   }
-  .NavMobileIcon {
+  .NavMenuIcon {
     position: absolute;
-    right: 20px !important;
+    right: 20px;
     top: 20px;
     width: 45px;
     height: 45px;
@@ -62,5 +63,33 @@
     justify-content: center;
     align-items: center;
     cursor: pointer;
+  }
+
+  .NavMobile {
+    position: absolute;
+    right: 20px;
+    
+    background-color: #fff;
+    border-radius: 3px;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-top: 15px;
+    padding: 25px 30px 15px;
+    display: flex;
+    box-shadow: 0 1px 15px rgba(0, 0, 0, 0.2);
+  }
+
+  .mobile-menu-arrow {
+    width: 20px;
+    height: 20px;
+    background-color: #fff;
+    border-radius: 2px;
+    position: absolute;
+    top: -5px;
+    bottom: auto;
+    left: auto;
+    right: 18px;
+    transform: rotate(45deg);
   }
 }

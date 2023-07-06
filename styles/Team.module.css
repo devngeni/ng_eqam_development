@@ -2,5 +2,6 @@
   position: absolute;
   width: 80vw;
   left: 20vw;
+  height: 100vh;
   background: red;
 }
