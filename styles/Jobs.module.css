@@ -45,3 +45,51 @@
   line-height: 23px;
   color: #000000;
 }
+@media screen and (max-width: 450px) {
+  .container{
+    left:5%;
+    width:100vw;
+  }
+  .content_head{
+    font-size: 42px;
+  }
+}
+@media screen and (max-width:375px) {
+  .container{
+    left:5%;
+    width:100vw;
+  }
+  .Rec1{
+    left:5%;
+    height:70px;
+  }
+  .content_head{
+    font-size: 40px;
+  }
+}
+@media screen and (max-width:200px) {
+  .container{
+    left:5%;
+    width:100vw;
+  }
+  .Rec1{
+    left:5%;
+    height: 80px;
+  }
+  .Text2{
+    margin-top: -40px;
+  }
+  .content_head{
+    font-size: 30px;
+    
+  }
+  @media screen and (max-width:156px) {
+    .Rec1{
+      left: 5%;
+      height:100px;
+    }
+    .Text2{
+      margin-top: -62px;
+    }
+  }
+}
