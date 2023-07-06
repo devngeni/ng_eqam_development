@@ -1,0 +1,158 @@
+.Container {
+  position: relative;
+  width: 80vw;
+  left: 20vw;
+  height: auto;
+  background-color: #ffffff;
+  right: 20vw;
+}
+
+.content_header {
+  display: flex;
+  width: fit-content;
+  margin-top: 155px;
+  color: #414141;
+  font-size: 72px;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.mainContainer {
+  display: flex;
+  margin-top: 40px;
+  width: 70vw;
+  padding: 6px 0px 19.99px 0px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 27.6px;
+}
+.card1 {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: auto;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 17.6px;
+  /* margin: 15px; */
+  /* background: #fff; */
+}
+.title {
+  padding: 7px;
+  width: fit-content;
+  height: 43px;
+  flex-direction: column;
+  justify-content: center;
+  color: #000;
+  font-family: Inter;
+  font-size: 41px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34.6px;
+}
+.appContainer {
+  /* position: absolute; */
+  /* background-color: #ffffff; */
+  width: 96%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.linkContainers {
+  width: fit-content;
+  display: flex;
+  padding: 2.15px 20.7px 2.16px 9.6px;
+  align-items: flex-start;
+  background: rgba(9, 106, 208, 0.13);
+  color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  margin: 9.1px;
+}
+/* .P1container {
+  display: flex;
+  position: relative;
+  background-color: rgba(9, 106, 208, 0.13);
+  width: 40%;
+  height: 20px;
+  margin-top: 10px;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+.P2container {
+  display: flex;
+  position: relative;
+  background-color: rgba(9, 106, 208, 0.13);
+  left: 44px;
+  width: 47%;
+  height: 20px;
+  margin-top: 10px;
+}
+.P1 {
+  width: fit-content;
+  height: 18px;
+  color: #000;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+}
+.P2 {
+  width: fit-content;
+  height: 18px;
+  color: #000;
+  margin-left: 10px;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 20px;
+  display: flex;
+  flex-direction: column;
+} */
+@media screen and (max-width: 899px) {
+  .content_header {
+    font-size: 69px;
+  }
+  .Container {
+    width: 100vw;
+    left: 5%;
+  }
+  .mainContainer {
+    width: 90vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .content_header {
+    font-size: 59px;
+  }
+  .title {
+    font-size: 30px;
+  }
+  .linkContainers {
+    font-size: 17px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .mainContainer {
+    margin-top: 20px;
+  }
+  .content_header {
+    font-size: 50px;
+  }
+  .title {
+    font-size: 21px;
+  }
+  .linkContainers {
+    font-size: 16px;
+  }
+}
