@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer/Footer";
 import Navbar from "@/components/Navbar/Navbar";
 import styles from "@/styles/Team.module.css";
 
@@ -6,7 +7,10 @@ const Team = () => {
   return (
     <>
       <Navbar />
-      <div className={team_container}></div>
+      <div className="ContainerWrapper">
+        <div className={team_container}></div>
+        <Footer />
+      </div>
     </>
   );
 };
