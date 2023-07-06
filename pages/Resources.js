@@ -1,6 +1,7 @@
 import Navbar from "@/components/Navbar/Navbar";
 import style from "../styles/Resources.module.css";
 import { items } from "@/components/Constants";
+// import Footer from "@/components/Footer/Footer";
 
 const Resources = () => {
   const {
@@ -19,6 +20,7 @@ const Resources = () => {
   return (
     <>
       <Navbar />
+
       <div className={resource_container}>
         <h1 className={resource_header}>Resource</h1>
         <div className={inline_block}>
@@ -40,6 +42,7 @@ const Resources = () => {
           })}
         </div>
       </div>
+      {/* <Footer /> */}
     </>
   );
 };
