@@ -36,12 +36,16 @@
   .about_container {
     left: 10px;
     width: 100vw;
+    margin-top: 40px;
   }
   .about {
     width: 90vw;
   }
 }
 @media screen and (max-width: 400px) {
+  .about_container {
+    margin-top: 20px;
+  }
   .about {
     font-size: 13px;
   }

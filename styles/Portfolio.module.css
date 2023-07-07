@@ -120,6 +120,7 @@
 @media screen and (max-width: 899px) {
   .content_header {
     font-size: 69px;
+    margin-top: 75px;
   }
   .Container {
     width: 100vw;
@@ -133,6 +134,7 @@
 @media screen and (max-width: 600px) {
   .content_header {
     font-size: 59px;
+    margin-top: 60px;
   }
   .title {
     font-size: 30px;
@@ -148,6 +150,7 @@
   }
   .content_header {
     font-size: 50px;
+    margin-top: 40px;
   }
   .title {
     font-size: 21px;
