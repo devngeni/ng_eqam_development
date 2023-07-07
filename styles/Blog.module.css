@@ -10,6 +10,52 @@
   width: 60vw;
   height: auto;
   color: #414141;
+  font-family: Inter;
   font-size: 52px;
-  margin: 10px 0px 20px;
+  font-weight: 700;
+  margin-top: 155px;
+  padding: 10px 0px 20px;
+  align-items: flex-start;
+}
+.blog_name_date {
+  width: fit-content;
+  display: flex;
+  gap: 10px;
+  color: #414141;
+  padding-left: 10px;
+  font: 15px;
+  font-family: Inter;
+}
+.blog_content {
+  width: 70vw;
+  height: auto;
+  font-size: 16px;
+  color: #414141;
+  padding: 27px 10px;
+  line-height: 20px;
+  display: block;
+}
+@media screen and (max-width: 899px) {
+  .blog_container {
+    left: 5%;
+    width: 100vw;
+  }
+  .blog_header {
+    width: 85vw;
+  }
+  .blog_content {
+    width: 85vw;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .blog_header {
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .blog_header {
+    font-size: 30px;
+  }
 }

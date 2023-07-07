@@ -3,7 +3,6 @@ import style from "@/styles/Resources.module.css";
 import { items } from "@/components/Constants";
 import Footer from "@/components/Footer/Footer";
 import { useRouter } from "next/router";
-// import Footer from "@/components/Footer/Footer";
 
 const Resources = () => {
   const router = useRouter();
