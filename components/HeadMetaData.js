@@ -8,6 +8,10 @@ const HeadMetaData = () => {
       ? "EQAM Capital"
       : `EQAM Capital | ${router.pathname.replace("/", "")}`;
 
+  const ogUrl = typeof window !== "undefined" ? window.location.href : "";
+  const ogImage =
+    typeof window !== "undefined" ? `${window.location.origin}/EQLogo.png` : "";
+
   return (
     <>
       <Head>
@@ -24,15 +28,9 @@ const HeadMetaData = () => {
           property="og:description"
           content="Building the Future of Web3 Technology in East Africa and Beyond"
         />
-        <meta
-          property="og:url"
-          content={`${window.location.origin}${router.asPath}`}
-        />
+        <meta property="og:url" content={ogUrl} />
         <meta property="og:type" content="website" />
-        <meta
-          property="og:image"
-          content={`${window.location.origin}/EQLogo.png`}
-        />
+        <meta property="og:image" content={ogImage} />
       </Head>
     </>
   );
