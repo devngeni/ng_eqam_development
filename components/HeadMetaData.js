@@ -5,14 +5,39 @@ const HeadMetaData = () => {
   const router = useRouter();
   let pageTitle = "EQAM Capital";
 
-  // Modify page title if the current path is not the root ("/")
-  if (router.pathname !== "/") {
-    pageTitle += ` | ${router.pathname.replace("/", "")}`;
+  const PageTitleData = {
+    "/": {
+      pageTitle: "EQAM Capital",
+    },
+    "/About": {
+      pageTitle: "EQAM Capital | About",
+    },
+    "/Team": {
+      pageTitle: "EQAM Capital | Team",
+    },
+    "/Portfolio": {
+      pageTitle: "EQAM Capital | Portfolio",
+    },
+    "/Resources": {
+      pageTitle: "EQAM Capital | Resources",
+    },
+    "/ContactUs": {
+      pageTitle: "EQAM Capital | ContactUs",
+    },
+    "/Jobs": {
+      pageTitle: "EQAM Capital | Jobs",
+    },
+  };
+
+  // Retrieve the page title from PageTitleData based on the current route
+  if (PageTitleData.hasOwnProperty(router.pathname)) {
+    pageTitle = PageTitleData[router.pathname].pageTitle;
   }
+
   return (
     <>
       <Head>
-        <title>{pageTitle} </title>
+        <title>{pageTitle}</title>
         <meta
           name="description"
           content="Building the Future of Web3 Technology in East Africa and Beyond"
@@ -25,7 +50,10 @@ const HeadMetaData = () => {
           property="og:description"
           content="Building the Future of Web3 Technology in East Africa and Beyond"
         />
-        <meta property="og:url" content={router.pathname} />
+        <meta
+          property="og:url"
+          content={typeof window !== "undefined" ? window.location.href : ""}
+        />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="/EQLogo.png" />
       </Head>
