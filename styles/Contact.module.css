@@ -2,9 +2,8 @@
   position: relative;
   width: 80vw;
   left: 20vw;
-  height: 110vw;
+  height: calc(100vh - 177px);
   overflow-y: scroll;
-  top: 0;
 }
 .content {
   height: auto;
