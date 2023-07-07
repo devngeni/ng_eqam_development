@@ -2,9 +2,9 @@
   position: relative;
   width: 80vw;
   left: 20vw;
-  height: 900px;
+  height: 110vw;
   overflow-y: scroll;
-  /* background-color: red; */
+  top: 0;
 }
 .content {
   height: auto;
