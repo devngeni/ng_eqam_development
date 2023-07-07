@@ -3,36 +3,10 @@ import { useRouter } from "next/router";
 
 const HeadMetaData = () => {
   const router = useRouter();
-  let pageTitle = "EQAM Capital";
-
-  const PageTitleData = {
-    "/": {
-      pageTitle: "EQAM Capital",
-    },
-    "/About": {
-      pageTitle: "EQAM Capital | About",
-    },
-    "/Team": {
-      pageTitle: "EQAM Capital | Team",
-    },
-    "/Portfolio": {
-      pageTitle: "EQAM Capital | Portfolio",
-    },
-    "/Resources": {
-      pageTitle: "EQAM Capital | Resources",
-    },
-    "/ContactUs": {
-      pageTitle: "EQAM Capital | ContactUs",
-    },
-    "/Jobs": {
-      pageTitle: "EQAM Capital | Jobs",
-    },
-  };
-
-  // Retrieve the page title from PageTitleData based on the current route
-  if (PageTitleData.hasOwnProperty(router.pathname)) {
-    pageTitle = PageTitleData[router.pathname].pageTitle;
-  }
+  const pageTitle =
+    router.pathname === "/"
+      ? "EQAM Capital"
+      : `EQAM Capital | ${router.pathname.replace("/", "")}`;
 
   return (
     <>
@@ -52,10 +26,13 @@ const HeadMetaData = () => {
         />
         <meta
           property="og:url"
-          content={typeof window !== "undefined" ? window.location.href : ""}
+          content={`${window.location.origin}${router.asPath}`}
         />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content="/EQLogo.png" />
+        <meta
+          property="og:image"
+          content={`${window.location.origin}/EQLogo.png`}
+        />
       </Head>
     </>
   );
