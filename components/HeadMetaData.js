@@ -9,8 +9,6 @@ const HeadMetaData = () => {
       : `EQAM Capital | ${router.pathname.replace("/", "")}`;
 
   const ogUrl = typeof window !== "undefined" ? window.location.href : "";
-  const ogImage =
-    typeof window !== "undefined" ? `${window.location.origin}/EQLogo.png` : "";
 
   return (
     <>
@@ -28,9 +26,12 @@ const HeadMetaData = () => {
           property="og:description"
           content="Building the Future of Web3 Technology in East Africa and Beyond"
         />
-        <meta property="og:url" content={ogUrl} />
+        <meta
+          property="og:url"
+          content={`https://eqam-capital.vercel.app/${router.asPath}`}
+        />
         <meta property="og:type" content="website" />
-        <meta property="og:image" content={ogImage} />
+        <meta property="og:image" content="/EQLogo.png" />
       </Head>
     </>
   );
