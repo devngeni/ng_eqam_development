@@ -1,15 +1,26 @@
 import Footer from "@/components/Footer/Footer";
 import Navbar from "@/components/Navbar/Navbar";
 import styles from "@/styles/Blog.module.css";
+import Image from "next/image";
 import React from "react";
+import EQlogo from "@/public/EQLogo.png";
 
 const Blog = () => {
-  const { blog_container, blog_header, blog_content, blog_name_date } = styles;
+  const {
+    blog_container,
+    blog_header,
+    blog_content,
+    blog_name_date,
+ 
+  } = styles;
 
   return (
     <>
       <Navbar />
       <div className="ContainerWrapper">
+        <div className="blog_logo">
+          <Image className="logo" src={EQlogo} alt="EqLogo" />
+        </div>
         <div className={blog_container}>
           <div className={blog_header}>
             Convergence: A New Governance Paradigm in DeFi
