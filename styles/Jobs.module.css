@@ -1,18 +1,12 @@
 .container {
-  position: absolute;
+  position: relative;
   width: 80vw;
   left: 20vw;
-  height: 900px;
-  overflow-y: scroll;
-  background-color: #fff;
-  right: 20vw;
-  height: 900px;
-  overflow-y: scroll;
+  height: calc(100vh - 177px);
+  display: flex;
+  flex-direction: column;
 }
-.content {
-  max-width: 1250px;
-  height: auto;
-}
+
 .content_head {
   display: flex;
   width: fit-content;
@@ -25,80 +19,36 @@
   line-height: normal;
 }
 .Rec1 {
-  position: relative;
-  width: 90%;
-  height: 74px;
-  left: 0;
-  right: 162px;
-  background: #E4EBED;
+  /* position: relative; */
+  width: 70vw;
+  height: auto;
+  min-height: 74px !important;
+  /* left: 0; */
+  /* right: 162px; */
+  background: #e4ebed;
   margin-top: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.Text2 {
-  width: fit-content;
-  height: 23px;
+  padding: 10px;
   font-family: Inter;
   font-size: 24px;
   font-weight: 300;
   line-height: 23px;
   color: #000000;
 }
+
+@media screen and (max-width: 899px) {
+  .container {
+    left: auto;
+    width: 100vw;
+  }
+  .Rec1 {
+    width: 95vw;
+  }
+}
 @media screen and (max-width: 450px) {
-  .container{
-    left:5%;
-    width:100vw;
-  }
-  .content_head{
+  .content_head {
     font-size: 42px;
-  }
-}
-@media screen and (max-width:375px) {
-  .container{
-    left:5%;
-    width:100vw;
-  }
-  .Rec1{
-    left:5%;
-    height:70px;
-  }
-  .content_head{
-    font-size: 40px;
-  }
-}
-@media screen and (max-width:300px) {
-  .container{
-    left:5%;
-    width:100vw;
-  }
-  .content_head{
-    font-size: 35px;
-  }
-}
-@media screen and (max-width:200px) {
-  .container{
-    left:5%;
-    width:100vw;
-  }
-  .Rec1{
-    left:5%;
-    height: 80px;
-  }
-  .Text2{
-    margin-top: -40px;
-  }
-  .content_head{
-    font-size: 30px;
-    
-  }
-  @media screen and (max-width:156px) {
-    .Rec1{
-      left: 5%;
-      height:100px;
-    }
-    .Text2{
-      margin-top: -62px;
-    }
   }
 }
