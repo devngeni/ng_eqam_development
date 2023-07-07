@@ -54,4 +54,3 @@ const ContactUs = () => {
 };
 
 export default ContactUs;
-// <Link href="https://twitter.com/ronkips" target="_blank"></Link>
