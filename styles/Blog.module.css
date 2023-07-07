@@ -35,6 +35,7 @@
   line-height: 20px;
   display: block;
 }
+
 @media screen and (max-width: 899px) {
   .blog_container {
     left: 5%;
@@ -42,6 +43,7 @@
   }
   .blog_header {
     width: 85vw;
+    margin-top: 45px;
   }
   .blog_content {
     width: 85vw;
@@ -51,11 +53,13 @@
 @media screen and (max-width: 600px) {
   .blog_header {
     font-size: 40px;
+    margin-top: 35px;
   }
 }
 
 @media screen and (max-width: 400px) {
   .blog_header {
     font-size: 30px;
+    margin-top: 30px;
   }
 }
