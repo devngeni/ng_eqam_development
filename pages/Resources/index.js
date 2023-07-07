@@ -3,6 +3,8 @@ import style from "@/styles/Resources.module.css";
 import { items } from "@/components/Constants";
 import Footer from "@/components/Footer/Footer";
 import { useRouter } from "next/router";
+import Image from "next/image";
+import EQlogo from "@/public/EQLogo.png";
 
 const Resources = () => {
   const router = useRouter();
@@ -15,7 +17,7 @@ const Resources = () => {
     inline_block,
     block,
     article_info,
-    article_info_sep,
+    article_info_sep
   } = style;
 
   console.log(items);
@@ -23,6 +25,9 @@ const Resources = () => {
     <>
       <Navbar />
       <div className="ContainerWrapper">
+        <div className="blog_logo">
+          <Image className="logo" src={EQlogo} alt="EqLogo" />
+        </div>
         <div className={resource_container}>
           <h1 className={resource_header}>Resource</h1>
           <div className={inline_block}>

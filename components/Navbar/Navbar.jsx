@@ -61,7 +61,7 @@ const Navbar = () => {
 
   return (
     <>
-      <HeadMetaData />
+    <HeadMetaData/>
       <div className={NavContainer}>
         <div className={Nav}>
           {/* Logo */}

@@ -95,6 +95,7 @@
   }
   .resource_header {
     font-size: 52px;
+    margin-top: 75px;
   }
   .inline_block {
     width: 88vw;
@@ -104,6 +105,7 @@
   .resource_header {
     font-size: 47px;
     line-height: 60.6px;
+    margin-top: 55px;
   }
   .heading_3 {
     font-size: 25px;
@@ -111,14 +113,14 @@
   }
   .paragraph_7 {
     font-size: 14px;
-  line-height: 20px;
-
+    line-height: 20px;
   }
 }
 @media screen and (max-width: 300px) {
   .resource_header {
     font-size: 37px;
     line-height: 53.6px;
+    margin-top: 40px;
   }
   .heading_3 {
     font-size: 20px;

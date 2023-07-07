@@ -2,9 +2,9 @@
   position: relative;
   width: 80vw;
   left: 20vw;
-  height: 900px;
+  height: calc(100vh - 177px);
   overflow-y: scroll;
-  /* background-color: red; */
+  overflow-x: hidden;
 }
 .content {
   height: auto;
@@ -48,18 +48,33 @@
     width: 100vw;
   }
   .contact_heading {
-    margin-top: 155px;
+    margin-top: 70px;
     font-size: 52px;
+  }
+}
+@media screen and (max-width: 600px) {
+  .contact_heading {
+    margin-top: 50px;
+    font-size: 42px;
+  }
+  .paragragh {
+    margin-top: 20.4px;
   }
 }
 @media screen and (max-width: 400px) {
   .contact_heading {
-    margin-top: 155px;
-    font-size: 42px;
+    margin-top: 45px;
+    font-size: 38px;
   }
   .paragragh {
-    /* margin-top: 33.4px; */
+    margin-top: 13.4px;
     color: #414141;
     font-size: 12px;
+  }
+}
+@media screen and (max-width: 300px) {
+  .contact_heading {
+    margin-top: 40px;
+    font-size: 34px;
   }
 }

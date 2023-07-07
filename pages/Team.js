@@ -1,6 +1,7 @@
 import Footer from "@/components/Footer/Footer";
 import { LinkIcon, MemberImg } from "@/components/ImagesStyles";
 import Navbar from "@/components/Navbar/Navbar";
+import { EQAMLogo } from "@/components/Start/Start";
 import styles from "@/styles/Team.module.css";
 import { useEffect, useState } from "react";
 
@@ -76,6 +77,7 @@ const Team = () => {
       <Navbar />
       <div className="ContainerWrapper">
         <div className={team_container}>
+          <EQAMLogo />
           <div className={title}>Team</div>
           <p>
             <span>

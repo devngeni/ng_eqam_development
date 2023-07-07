@@ -6,7 +6,7 @@
   overflow-y: scroll;
 }
 .about {
-  width: 60vw;
+  width: 70vw;
   display: flex;
   padding: 60.31px 50.11px 60px 50px;
   flex-direction: column;
@@ -36,13 +36,19 @@
   .about_container {
     left: 10px;
     width: 100vw;
+    margin-top: 40px;
   }
   .about {
     width: 90vw;
+    padding: 60.31px 50.11px 60px 30px;
   }
 }
 @media screen and (max-width: 400px) {
+  .about_container {
+    margin-top: 20px;
+  }
   .about {
+    padding: 30.31px 5.11px 40px 20px;
     font-size: 13px;
   }
   .span_text {
