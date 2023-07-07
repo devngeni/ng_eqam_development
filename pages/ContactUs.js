@@ -17,12 +17,14 @@ const ContactUs = () => {
                 If you are building something related to some of the themes
                 below, we welcome you to contact us at{" "}
                 <span>
-                  <Link href="mailto:invest@ngc.fund">invest@ngc.fund</Link>
+                  <Link href="mailto:invest@ngc.fund" target="_blank">
+                    invest@ngc.fund
+                  </Link>
                 </span>
                 . For a general query, feel free to contact us on
                 <br />
                 <span>
-                  <Link href="https://twitter.com/ronkips" target="_blank">
+                  <Link href="https://twitter.com/" target="_blank">
                     twitter
                   </Link>
                 </span>
