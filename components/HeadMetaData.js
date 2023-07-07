@@ -28,7 +28,7 @@ const HeadMetaData = () => {
         />
         <meta
           property="og:url"
-          content={`https://eqam-capital.vercel.app/${router.asPath}`}
+          content={`https://eqam-capital.vercel.app${router.asPath}`}
         />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="/EQLogo.png" />
