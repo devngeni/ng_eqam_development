@@ -78,28 +78,28 @@ export const items = [
 
 export const AboutContent = [
   {
-    header: "Our Investment Thesis",
+    header: "INTRODUCTION",
     paragragh:
-      "We identify projects with disruptive innovation, aiming to solve problems with solutions that are characterized by simplicity, cost affordability, speed, uniqueness and a compelling product market fit."
+      "Discover the Future of Finance with Eqam Capital Limited! We set trading and investment trends in crypto, forex and stocks, not just follow them. Redefine investment limits with a team as dynamic as the market. Ready to revolutionise your portfolio? Begin your next-gen investment journey today."
   },
   {
-    header: "Our Beginnings",
+    header: "OUR INVESTMENT THESIS",
     paragragh:
-      "  Founded in 2017, NGC Ventures manages over 500M in AUM. Our team comprises of seasoned entrepreneurs and fund managers as well as “degens” of the blockchain space alike. We are globally diverse with team members present in Singapore, San Francisco, California, Texas, London, Shanghai and Taipei. Our LPs include listed entities from web 2.0, family offices, HNWI as well as founders who were our investees."
+      "We've crafted a legacy of spotting the game-changers before they're mainstream. We value simplicity that speaks volumes and cost-effective solutions that set the pace for greater margins. With a keen eye on speed and adaptability, our investments aren't just unique; they redefine market standards. At Eqam Capital, we're more than just investors; we're your partners in shaping the financial frontier."
   },
   {
-    header: "Our Approach",
+    header: "OUR BEGININGS",
     paragragh:
-      "At NGC Ventures, we take a long-term and hands-on approach to investing, supporting our portfolio companies through their entrepreneurial journey from market access, go-to-market strategy, recruiting, technical expertise to regulatory guidance. Our focus on the web3 and crypto space reflects our belief in the potential of this new era of the internet to bring about a wave of creativity and entrepreneurship."
+      " Founded in November 2021, Eqam Capital rapidly carved a niche in the world of digital, forex, and stock assets management. Our team, uniting seasoned business experts, energetic blockchain analysts, astute quant traders, and financial maestros, hails from global influential financial hubs including Kenya, Dubai, the UK, and Bangladesh. Together, our multifaceted expertise has directed trades exceeding 750 million USD across a myriad of exchange platforms. With Eqam Capital, you're stepping into a realm where age-old financial wisdom meets a new pulse era of contemporary innovation."
   },
   {
-    header: "Funding Research",
+    header: "OUR STRATEGIES",
     paragragh:
-      "Many of tomorrow’s web 3.0 projects emerge out of today’s research. As such we invest heavily via grants, donations or investments into research teams at institutions of higher learning including: National University of Singapore, Nanyang Technology University, and UC Berkeley."
+      "We utilise our broad market presence to capitalise on arbitrage opportunities across numerous exchanges. Our quant strategies range from straightforward to advanced, harnessing diverse techniques for optimal returns. We're steadfast market makers, ensuring liquidity for major coins, derivatives, and altcoins on premier exchanges. Beyond trading, we strategically invest in early-stage projects, acquiring the best token and equity deals. Our automated strategies use a quantitative approach to trade on liquid assets and futures, while our discretionary trading targets high-liquidity cryptocurrency pairs."
   },
   {
-    header: "Investing in other Funds",
+    header: "OUR APPROACH",
     paragragh:
-      "NGC Ventures makes investments in other funds in the web 3.0 space that complement our investment thesis. This provides our investees with a much greater reach in terms of resources and connections in the space. Our investments include funds like Griffin Gaming Fund, Bitkraft, Republic Capital, Metaversal, Figment Capital, Collab+Currency, Symbolic Capital, WWG Ventures, Dispersion Capital, Geekcartel, Impossible Finance, 6th Man Ventures, Blockchain Founders Fund, Sanctor Capital, Shima Capital, Finenace Ventures, Borderless Capital, Bonfire Union and Longhash Ventures."
-  }
+      "At Eqam Capital, we leverage advanced algorithms and bots for proprietary trading, employing back tested strategies for optimal performance. Our market-making capabilities span both CEX and DEX, and by utilising a robust liquidity pool, we ensure efficient token execution at minimal costs. Explore our blockchain investment solutions, designed with precision to cater to sophisticated investment profiles. Navigate the finance frontier with our tech-forward approach."
+  },
 ];
