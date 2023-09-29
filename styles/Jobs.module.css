@@ -42,13 +42,20 @@
   .container {
     left: auto;
     width: 100vw;
+    padding-left: 2%;
   }
   .Rec1 {
     width: 95vw;
+  }
+  .content_head {
+    margin-top: 60px;
   }
 }
 @media screen and (max-width: 450px) {
   .content_head {
     font-size: 42px;
+  }
+    .content_head {
+    margin-top: 50px;
   }
 }
