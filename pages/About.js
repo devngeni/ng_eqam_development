@@ -17,11 +17,9 @@ const About = () => {
         <div className={about_container}>
           <div className={about}>
             <span className={span_text}>
-              NGC Ventures invests in early stage, web 3.0 infrastructure
-              startups and projects. We identify <br /> projects with innovative
-              ideas to today’s blockchain problems and work with them from
-              ideation
-              <br /> to strategy and market adoption
+            Equator is East Africa’s leading trading firm and crypto asset fund. Specializing in proprietary trading, 
+            <br />market making by provision of liquidity across CEX  DEX exchanges, efficient trade execution to
+              <br />strategy and market adoption.
             </span>
             <br />
             {AboutContent.map((item, index) => (

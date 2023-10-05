@@ -19,30 +19,16 @@ const ContactUs = () => {
             <span className={contact_heading}>Contact us</span>
             <div className={paragragh}>
               <p>
-                If you are building something related to some of the themes
-                below, we welcome you to contact us at{" "}
-                <span>
-                  <Link href="mailto:invest@ngc.fund" target="_blank">
-                    invest@ngc.fund
-                  </Link>
-                </span>
-                . For a general query, feel free to contact us on
-                <br />
-                <span>
-                  <Link href="https://twitter.com/" target="_blank">
+              If you are engaged in trading related to the following themes, we encourage you to reach out to us at info@eqcap.fund. For any general inquiries, please feel free<br /> to contact us via,+254742740432,
+              <span>
+                  <Link href="https://twitter.com/eQamCap/" target="_blank">
                     twitter
                   </Link>
                 </span>
                 .
               </p>
               <p>
-                Blockchain infrastructure forms the core of our investment
-                thesis, driven in particular by areas such as decentralizing the
-                different layers of blockchain protocols <br />
-                (storage, data indexing, computation, oracles, node
-                infrastructure etc), account abstraction, interchain
-                operability. We also invest in innovative projects on the
-                <br /> application layer in DeFi.
+                Our investment philosophy centers around the core infrastructure of the blockchain, with a particular focus on initiatives that enhance and facilitate crypto trading.
               </p>
             </div>
           </div>
