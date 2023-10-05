@@ -5,6 +5,8 @@ import Footer from "@/components/Footer/Footer";
 import { useRouter } from "next/router";
 import Image from "next/image";
 import EQlogo from "@/public/EQLogo.png";
+import { useEffect, useState } from "react";
+import { TruncatedWords } from "@/components/contentInnerHtml";
 
 const Resources = () => {
   const router = useRouter();
@@ -20,7 +22,25 @@ const Resources = () => {
     article_info_sep
   } = style;
 
-  console.log(items);
+  const [posts, setPosts] = useState([])
+  // console.log(items);
+  const GetMediumFeeds = async () => {
+    let response = await fetch("https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fmedium.com%2Ffeed%2F%40eqcap", {
+      method: "GET",
+    });
+
+    let data = await response.json();
+    console.log(data.items);
+    setPosts(data.items)
+  }
+
+  useEffect(() => {
+    GetMediumFeeds()
+  }, [])
+
+
+
+
   return (
     <>
       <Navbar />
@@ -31,23 +51,24 @@ const Resources = () => {
         <div className={resource_container}>
           <h1 className={resource_header}>Resource</h1>
           <div className={inline_block}>
-            {items.map((item, index) => {
+            {posts.map((item, index) => {
               return (
                 <div
                   className={article_wrapper}
                   key={index}
                   onClick={() => {
-                    router.push(`Resources/blog`);
+                    router.push(`Resources/${index}`);
                   }}
                 >
-                  <h3 className={heading_3}>{item.heading}</h3>
+                  <h3 className={heading_3}>{item.title}</h3>
                   <br />
-                  <p className={paragraph_7}>{item.paragragh}</p>
+                  <TruncatedWords description={item.description} />
+
                   <br />
                   <div className={block}>
-                    <p className={article_info}>{item.timestamp}</p>
-                    <p className={article_info_sep}>{item.border}</p>
-                    <p className={article_info}>item.name</p>
+                    <p className={article_info}>{item.pubDate}</p>
+                    <p className={article_info_sep}>|</p>
+                    <p className={article_info}>{item.author}</p>
                     <div />
                   </div>
                 </div>
