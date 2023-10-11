@@ -9,6 +9,7 @@
   border-top: 1px solid #000;
   margin-top: 10px;
   /* margin: 15px; */
+  z-index: 1;
 }
 .footer_copyright {
   width: 20vw;
