@@ -6,7 +6,7 @@
 }
 
 .title {
-  color: #414141;
+  color: #2C3A98;
   font-family: Inter;
   font-size: 72px;
   font-style: normal;
@@ -67,6 +67,7 @@
   backface-visibility: hidden;
   transform: rotateY(0);
   transition: transform 0.5s;
+
 }
 
 .Members_Card.flipped .CardContent,
@@ -112,6 +113,8 @@
 .MemberCardImg {
   width: 100%;
   height: 265px;
+  object-fit: contain;
+
 }
 
 .CardContent {
@@ -130,7 +133,7 @@
 }
 
 .MemberName_title h1 {
-  color: #414141;
+  color: #294EA6;
   font-family: Inter;
   font-size: 25px;
   font-style: normal;
@@ -138,7 +141,7 @@
 }
 
 .MemberName_title h2 {
-  color: #414141;
+  color: #000;
   font-family: Inter;
   font-size: 15px;
   font-style: normal;
