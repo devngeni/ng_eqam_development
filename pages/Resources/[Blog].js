@@ -33,7 +33,7 @@ const Blog = () => {
 
   useEffect(() => {
     GetMediumFeeds()
-  }, [post])
+  }, [])
 
   if (!post) {
     GetMediumFeeds()

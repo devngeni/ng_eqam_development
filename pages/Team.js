@@ -153,7 +153,7 @@ const Team = () => {
           <div className={title}>Team</div>
           <p>
             <span>
-            Eqam Capital, East Africa's Premier Crypto Trading Firm, prides itself on having a seasoned and proficient team of investment professionals who bring a global perspective, coupled with an unparalleled reach to industry resources across the world.
+            Eqam Capital, East Africa&#39;s Premier Crypto Trading Firm, prides itself on having a seasoned and proficient team of investment professionals who bring a global perspective, coupled with an unparalleled reach to industry resources across the world.
             </span>
             <span>
             Our cadre is richly diverse, comprising experts from the realms of technology, finance, consulting, and investment banking. With an expansive educational and professional background, we bestow upon our portfolio companies a wealth of invaluable and pertinent expertise, ensuring they are well-equipped to navigate the dynamic and ever-evolving crypto market. At Eqam Capital, we don’t just trade; we enhance the financial futures of our clientele through astute, forward-thinking investment strategies in the cryptocurrency domain.
