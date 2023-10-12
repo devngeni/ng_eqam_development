@@ -12,13 +12,14 @@ const Footer = () => {
     });
   };
   const { footer_container, footer_copyright, nav_links, phone, Email, LinkedIn, Twitter, Medium,
-    Substack, btn, footer_text } = styles;
+    Substack, btn, footer_wrapper, footer_text } = styles;
   return (
     <div className={footer_container}>
       <div className={footer_copyright}>
         {/* <span>Home</span> */}
         <h5>© {new Date().getFullYear()} EQAM CAPITAL</h5>
       </div>
+      <div className = {footer_wrapper}>
       <div className={nav_links}>
             <Link href="tel:+254 742 740 432" target="_blank" rel="noopener noreferrer">
               <div className={phone}></div>
@@ -43,6 +44,7 @@ const Footer = () => {
         {/* <IoIosArrowUp style={{width:"33"}} /> */}
         <Image src={image} alt="" />
       </button>
+      </div>
     </div>
   );
 };

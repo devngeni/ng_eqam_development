@@ -5,6 +5,7 @@
   height: calc(100vh - 177px);
   overflow-y: scroll;
   overflow-x: hidden;
+  display: flex;
 }
 .content {
   height: auto;
@@ -85,7 +86,9 @@
   justify-content:center;
   gap: 30px;
   height:auto;
-  width:60%;
+  width:fit-content;
+  margin-left: auto;
+  margin-right: auto;
   /* background-color: red; */
 }
 

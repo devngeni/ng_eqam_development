@@ -10,6 +10,7 @@
   margin-top: 10px;
   /* margin: 15px; */
   z-index: 2;
+  background-color: #fff;
 }
 .footer_copyright {
   width: 20vw;
@@ -43,15 +44,20 @@
   letter-spacing: 0.5px;
 }
 
+.footer_wrapper{
+  display: flex;
+  gap:20px;
+}
+
 .nav_links{
   display: flex;
   flex-direction: row;
   justify-content:center;
   gap: 30px;
   height:auto;
-  width:15%;
+  width:fit-content;
   /* background-color: red; */
-  margin-left:auto;
+  /* margin-left:auto; */
 }
 .phone,
 .Email,
@@ -133,5 +139,13 @@
 @media screen and (max-width: 352px) {
   .footer_copyright {
     width: 50vw;
+  }
+}
+
+@media screen and (max-width: 899px){
+  .nav_links{
+    display: none;
+    /* width:fit-content;
+    gap:20px; */
   }
 }
