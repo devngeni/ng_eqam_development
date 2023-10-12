@@ -5,7 +5,6 @@ import { useEffect, useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import useOutsideClick from "@/Helpers/CloseModal";
-import HeadMetaData from "../HeadMetaData";
 
 const navigationItems = [
   { path: "/", label: "HOME" },
@@ -61,7 +60,6 @@ const Navbar = () => {
 
   return (
     <>
-    <HeadMetaData/>
       <div className={NavContainer}>
         <div className={Nav}>
           {/* Logo */}

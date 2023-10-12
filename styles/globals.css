@@ -10,15 +10,14 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-
 }
 
 body {
   color: black;
   background: white;
-  background-image:url("/BG_image.png");
+  background-image: url("/BG_image.png");
   background-position: center;
-  background-size:cover;
+  background-size: cover;
   background-repeat: no-repeat;
 }
 
@@ -31,7 +30,6 @@ a {
   position: relative;
   width: 100vw;
   height: auto;
- 
 }
 
 /* logo */
@@ -67,8 +65,8 @@ a {
 .article h4,
 .article h5,
 .article h6,
-strong {
-  color: #294EA6;
+.article strong {
+  color: #294ea6;
   margin: 8px 0;
 }
 

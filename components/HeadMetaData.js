@@ -1,16 +1,15 @@
 import Head from "next/head";
 import { useRouter } from "next/router";
 
-const HeadMetaData = () => {
+const HeadMetaData = ({ pageTitle }) => {
   const router = useRouter();
-  const pageTitle =
-    router.pathname === "/"
-      ? "EQAM Capital"
-      : `EQAM Capital | ${router.pathname.replace("/", "")}`;
+  const title = pageTitle ? `${pageTitle}` : "EQAM CAPITAL";
+  const ogUrl = router.pathname ? `${router.pathname}` : "";
+
   return (
     <>
       <Head>
-        <title>{pageTitle} </title>
+        <title>{title}</title>
         <meta
           name="description"
           content="Building the Future of Web3 Technology in East Africa and Beyond"
@@ -23,7 +22,7 @@ const HeadMetaData = () => {
           property="og:description"
           content="Building the Future of Web3 Technology in East Africa and Beyond"
         />
-        <meta property="og:url" content={router.pathname} />
+        <meta property="og:url" content={ogUrl} />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="/EQLogo.png" />
       </Head>

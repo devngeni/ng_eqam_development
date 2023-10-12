@@ -1,13 +1,14 @@
-import HeadMetaData from "@/components/HeadMetaData";
-import Navbar from "@/components/Navbar/Navbar";
+import HomeLayout from "@/components/Layouts/layout";
 import Start from "@/components/Start/Start";
 
 export default function Home() {
-  return (
-    <>
-      <HeadMetaData />
-      <Navbar />
-      <Start />
-    </>
-  );
+  return <Start />;
 }
+
+Home.getLayout = function getLayout(page) {
+  return (
+    <HomeLayout showFooter={false} pageTitle={"Eqam capital | Home"}>
+      {page}
+    </HomeLayout>
+  );
+};
