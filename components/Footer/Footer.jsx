@@ -1,13 +1,12 @@
 import Image from "next/image";
 import styles from "./Footer.module.css";
 import image from "../../public/btn.png";
-// import { IoIosArrowUp } from "react-icons/io";
 
 const Footer = () => {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth"
+      behavior: "smooth",
     });
   };
   const { footer_container, footer_copyright, btn, footer_text } = styles;
@@ -15,13 +14,12 @@ const Footer = () => {
     <div className={footer_container}>
       <div className={footer_copyright}>
         <span>Home</span>
-        <h5>© {new Date().getFullYear()} EQAM CAPITAL</h5>
+        <h1>© {new Date().getFullYear()} EQAM CAPITAL</h1>
       </div>
 
-      <button className={btn} onClick={scrollToTop}>
-        {/* <IoIosArrowUp style={{width:"33"}} /> */}
+      <div className={btn} onClick={scrollToTop}>
         <Image src={image} alt="" />
-      </button>
+      </div>
     </div>
   );
 };
