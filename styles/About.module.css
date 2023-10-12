@@ -24,13 +24,14 @@
   line-height: 21px;
 }
 .span_text {
-  color: #414141;
+  color: #5078BD;
   font-size: 18px;
   font-family: Inter;
   font-style: normal;
   font-weight: 700;
   line-height: 21px;
 }
+
 
 .about strong {
   color: red;
