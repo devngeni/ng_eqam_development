@@ -16,11 +16,11 @@ const About = () => {
         </div>
         <div className={about_container}>
           <div className={about}>
-            <span className={span_text}>
+            <h1 className={span_text}>
             Equator is East Africa’s leading trading firm and crypto asset fund. Specializing in proprietary trading, 
             <br />market making by provision of liquidity across CEX  DEX exchanges, efficient trade execution to
               <br />strategy and market adoption.
-            </span>
+            </h1>
             <br />
             {AboutContent.map((item, index) => (
               <span key={index}>
