@@ -5,7 +5,7 @@ import EQlogo from "@/public/EQLogo.png";
 import HomeLayout from "@/components/Layouts/layout";
 
 const About = () => {
-  const { about_container, about, span_text } = style;
+  const { about_container, about, about_wrapper, span_text } = style;
   return (
     <div className="ContainerWrapper">
       <div className="blog_logo">
