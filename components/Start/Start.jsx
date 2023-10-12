@@ -60,7 +60,7 @@ const Start = () => {
       <EQAMLogo />
       <div className={textWrapper}>
         {/* Display the typed message */}
-        <TypedMessage text="We back visionary teams building the next generation of decentralized technologies" />
+        <TypedMessage text="Empowering Your Digital Wealth Journey - Trade Crypto, Traverse Continents!" />
       </div>
     </div>
   );

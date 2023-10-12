@@ -11,7 +11,7 @@
   display: flex;
   width: fit-content;
   margin-top: 155px;
-  color: #414141;
+  color: #2C3A98;
   font-size: 72px;
   font-family: Inter;
   font-style: normal;
@@ -19,12 +19,9 @@
   line-height: normal;
 }
 .Rec1 {
-  /* position: relative; */
   width: 70vw;
   height: auto;
   min-height: 74px !important;
-  /* left: 0; */
-  /* right: 162px; */
   background: #e4ebed;
   margin-top: 40px;
   display: flex;

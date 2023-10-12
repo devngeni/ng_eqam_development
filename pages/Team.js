@@ -28,7 +28,7 @@ const members = [
     name: "Amzad Hossen",
     role: "Crypto Trader and DeFi Analyst, Dubai",
     imageSrc:
-      "https://i.pinimg.com/236x/38/1e/c0/381ec006034984c22f0db62451b10e67.jpg",
+      "https://res.cloudinary.com/dewnu3vpt/image/upload/v1697108248/51568_1_cd2ovx.jpg",
 
     description:
     "I am Amzad, a seasoned Crypto Trader and Market Analyst based in Dubai. With an intricate understanding of Cryptocurrency, Blockchain, Digital Assets, Web3, and Decentralized Finance (DeFi), I bring a holistic view of the evolving digital financial landscape. My specialization lies in dissecting market trends, synthesizing complex data, and identifying lucrative opportunities within the crypto domain. My data-driven approach, paired with my unwavering commitment to continuous learning, places me at the forefront of financial innovation. I am a proud alumnus of University Brunei Darussalam, holding a Bachelor's degree in Computer Science, and I continuously bridge the intersection of technology and finance in my analyses."
@@ -56,7 +56,7 @@ const members = [
     name: "William Okwach",
     role: "Crypto Trader, Kenya",
     imageSrc:
-      "https://res.cloudinary.com/dewnu3vpt/image/upload/v1696240046/imgpsh_fullsize_anim_3_uz9yzc.png",
+      "https://res.cloudinary.com/dewnu3vpt/image/upload/c_scale,h_496,w_478/v1697104782/imgpsh_fullsize_anim_1_1_cu3cq4.jpg",
 
     description:
     "I am a crypto trading and market analysis specialist, EqCap. An alumnus of Zetech University with a Bachelor’s degree in Business Administration and Management (Finance). I command a nuanced understanding of the confluence between cutting-edge technology and modern finance.\n\nMy expertise lies in discerning and forecasting market trajectories within the cryptocurrency and forex sectors. Leveraging sophisticated data-driven techniques, I consistently engineer informed trading strategies that anticipate market flux. Committed to perceptual learning and financial mastery, I am poised to remain at the forefront of financial analytics and strategic investment."
@@ -65,7 +65,7 @@ const members = [
     name: "Adam Ongusi",
     role: "Research Analyst, Kenya",
     imageSrc:
-      "https://res.cloudinary.com/dewnu3vpt/image/upload/c_thumb,w_200,g_face/v1696240608/imgpsh_fullsize_anim_4_x1b9zt.png",
+      "https://res.cloudinary.com/dewnu3vpt/image/upload/c_scale,h_496,w_478/v1696240608/imgpsh_fullsize_anim_4_x1b9zt.png",
 
     description:
     "Based in Nairobi, I specialize in financial analysis with a keen focus on market trends and cryptocurrency investments. Beyond my professional pursuits, I have a profound appreciation for technology and its transformative impact on our world.\n\nMy analytical acumen is complemented by a comprehensive understanding of the broader financial ecosystem, allowing me to provide insightful recommendations and strategies to stakeholders. I've honed my skills in data interpretation, ensuring that investment decisions are data-driven and aligned with market movements.\n\nMy interests extend to photography, capturing moments that resonate with the ever-evolving dynamics of the market. As an avid swimmer, I believe in maintaining a balance between mental agility and physical fitness. Additionally, I am a fervent football enthusiast, drawing parallels between the strategies on the field and in the financial world."
@@ -89,13 +89,13 @@ const members = [
     "I am a technical analyst tactician and double up as a trader at EqCap, with a focused and impactful 3-year journey in the financial sector, I amalgamate quantitative acumen with deep-seated market insights. Expertly navigating the complexities of global financial markets, I am proficient in technical analysis, leveraging data-driven insights to consistently secure advantageous trading positions.\n\nArmed with meticulous research, a sharp eye for emerging trends, and an innate ability to anticipate market pulses, I am not just on the money – I like to be ahead of the curve."
   },
   {
-    name: "Stephen Gachanja",
-    role: "Quant Trader and Consultant, Kenya",
+    name: "Lucy Manzi",
+    role: " DeFi Researcher, Kenya",
     imageSrc:
-      "https://res.cloudinary.com/dewnu3vpt/image/upload/v1696242255/imgpsh_fullsize_anim_7_hw9wml.png",
+      "https://res.cloudinary.com/dewnu3vpt/image/upload/c_scale,h_496,q_100,w_478/v1697106124/imgpsh_fullsize_anim_9_vwjv3k.png",
 
     description:
-    "I’m Stephen. I’m a Quant Trader living in Nairobi. I work with EQAM Capital as a quant trader, a consultant for Ngeni.io, and also write on trends in finance, specifically in trading. I dominantly trade currencies, but have portfolios in cryptocurrencies, indices, stocks, and commodities. I build strategies that trade the aforementioned in MQL4/5, and Python programming languages.\n\nI am a fan of entrepreneurship, programming, and fitness. I’m also interested in running and cycling."
+    "I'm spurred by a passion for the innovative field of decentralized finance in my work as a DeFi Researcher. Having a thorough understanding of blockchain technology, I assess new trends, evaluate up-and-coming projects, and look into potential risks in the DeFi industry. I equip stakeholders with insightful, useful knowledge through critical and analytical thinking. My ultimate goal is not just to navigate but to contribute effectively to this rapidly evolving field."
   },
   {
     name: "Rita Mueni",
@@ -153,15 +153,10 @@ const Team = () => {
           <div className={title}>Team</div>
           <p>
             <span>
-              NGC Ventures is composed of experienced and reliable investment
-              professionals with global vision and access to worldwide industry
-              resources.
+            Eqam Capital, East Africa&#39;s Premier Crypto Trading Firm, prides itself on having a seasoned and proficient team of investment professionals who bring a global perspective, coupled with an unparalleled reach to industry resources across the world.
             </span>
             <span>
-              We come from diverse backgrounds that include technology, finance,
-              consulting and investment banking. Our extensive educational and
-              professional experience benefits our portfolio companies with a
-              wealth of valuable and relevant expertise.
+            Our cadre is richly diverse, comprising experts from the realms of technology, finance, consulting, and investment banking. With an expansive educational and professional background, we bestow upon our portfolio companies a wealth of invaluable and pertinent expertise, ensuring they are well-equipped to navigate the dynamic and ever-evolving crypto market. At Eqam Capital, we don’t just trade; we enhance the financial futures of our clientele through astute, forward-thinking investment strategies in the cryptocurrency domain.
             </span>
             <span>Click on a team member to learn more.</span>
           </p>
