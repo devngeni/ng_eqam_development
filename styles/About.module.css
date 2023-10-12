@@ -4,6 +4,7 @@
   left: 20vw;
   margin-top: 170.69px;
   overflow-y: scroll;
+  
 }
 .about {
   width: 70vw;
@@ -23,6 +24,14 @@
   font-weight: 300;
   line-height: 21px;
 }
+
+.about_wrapper{
+  /* background-color: red; */
+  /* gap:1px; */
+  display:flex;
+  flex-direction: column;
+}
+
 .span_text {
   color: #5078BD;
   font-size: 18px;
@@ -30,6 +39,7 @@
   font-style: normal;
   font-weight: 700;
   line-height: 21px;
+  
 }
 
 
