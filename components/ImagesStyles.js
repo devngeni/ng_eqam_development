@@ -10,6 +10,10 @@ export const MemberImg = styled("img")({
   width: "100%",
   height: "100%",
   borderRadius: "10px 10px 0 0",
+  // objectFit: "contain",
+  objectFit: "contain",
+
+
 });
 
 export const LinkIcon = styled("img")({
