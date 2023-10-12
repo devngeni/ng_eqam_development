@@ -1,14 +1,10 @@
-const withOffline = require('next-offline');
-
+/** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
 
   images: {
     domains: [],
   },
-
-  // Enable service workers and offline support
-  ...withOffline(),
 };
 
 module.exports = nextConfig;

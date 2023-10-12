@@ -15,6 +15,10 @@ body {
 body {
   color: black;
   background: white;
+  background-image: url("/BG_image.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 a {
@@ -52,7 +56,7 @@ a {
 
 .article p {
   font-size: 16px;
-  color: #414141;
+  color: #000;
   margin-top: 5px;
 }
 .article h1,
@@ -60,8 +64,9 @@ a {
 .article h3,
 .article h4,
 .article h5,
-.article h6 {
-  color: black;
+.article h6,
+.article strong {
+  color: #294ea6;
   margin: 8px 0;
 }
 

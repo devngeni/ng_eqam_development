@@ -2,10 +2,11 @@
   position: relative;
   width: 80vw;
   left: 20vw;
-  height: calc(100vh - 177px);
   overflow-y: scroll;
   overflow-x: hidden;
+  display: flex;
 }
+
 .content {
   height: auto;
 }
@@ -17,7 +18,7 @@
   flex-direction: column;
   justify-content: center;
   flex-shrink: 0;
-  color: #414141;
+  color: #2c3a98;
   font-size: 72px;
   font-family: Inter;
   font-style: normal;
@@ -82,17 +83,19 @@
 .nav_links {
   display: flex;
   flex-direction: row;
-  justify-content:center;
+  justify-content: center;
   gap: 30px;
-  height:auto;
-  width:60%;
+  height: auto;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
   /* background-color: red; */
 }
 
 @media screen and (max-width: 599px) {
-  .nav_links{
+  .nav_links {
     margin-left: 0;
-    width:85%;
+    width: 85%;
   }
 }
 
@@ -105,9 +108,9 @@
   width: 21px;
   height: 20px;
   flex-shrink: 0;
-  fill: #fff; 
+  fill: #fff;
   /* background-color: #000;    */
-  transition: fill 0.3s; 
+  transition: fill 0.3s;
   cursor: pointer;
   background-position: center;
   background-repeat: no-repeat;
@@ -132,15 +135,13 @@
 
 .Medium {
   background-image: url("/medium_icon.svg");
-  opacity:0.7;
-
+  opacity: 0.7;
 }
 
 .Substack {
-  background-image: url("/substack_icon.svg"); 
-  opacity:0.7;
+  background-image: url("/substack_icon.svg");
+  opacity: 0.7;
 }
-
 
 .phone:hover,
 .Email:hover,
@@ -148,8 +149,16 @@
 .Twitter:hover,
 .Medium:hover,
 .Substack:hover {
-  fill: #000; 
+  fill: #000;
 }
 
-
-
+@media screen and (min-width: 1535px) {
+  .contact_container {
+    height: calc(100vh - 177px);
+  }
+}
+@media screen and (max-width: 1534px) {
+  .contact_container {
+    height: 100vh;
+  }
+}

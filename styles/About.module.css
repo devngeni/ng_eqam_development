@@ -24,7 +24,7 @@
   line-height: 21px;
 }
 .span_text {
-  color: #414141;
+  color: #5078BD;
   font-size: 18px;
   font-family: Inter;
   font-style: normal;
@@ -32,12 +32,13 @@
   line-height: 21px;
 }
 
+
 .about strong {
-  color: red;
+  color: #823DC5;
 }
 
 .about span {
-  color: rgb(94, 255, 0);
+  color: #000;
 }
 @media screen and (max-width: 899px) {
   .about_container {
