@@ -33,6 +33,13 @@
 }
 
 
+.about strong {
+  color: red;
+}
+
+.about span {
+  color: rgb(94, 255, 0);
+}
 @media screen and (max-width: 899px) {
   .about_container {
     left: 10px;
