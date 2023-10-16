@@ -8,9 +8,9 @@
 .title {
   color: #2C3A98;
   font-family: Inter;
-  font-size: 72px;
+  font-size: calc(1.8rem + ((1vw - 0.48rem) * 0.9722));
   font-style: normal;
-  font-weight: 700;
+  font-weight: 400;
   margin-top: 155px;
 }
 .team_container p {
@@ -134,9 +134,10 @@
 .MemberName_title h1 {
   color: #294EA6;
   font-family: Inter;
-  font-size: 25px;
+  font-size: calc(1rem + ((1vw - 7.68px) * 0.1736));
+
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .MemberName_title h2 {
