@@ -28,7 +28,7 @@ const members = [
     name: "Amzad Hossen",
     role: "Crypto Trader and DeFi Analyst, Dubai",
     imageSrc:
-      "https://res.cloudinary.com/dewnu3vpt/image/upload/v1697108248/51568_1_cd2ovx.jpg",
+      "https://res.cloudinary.com/dewnu3vpt/image/upload/c_scale,h_496,w_358/v1697444392/imgpsh_fullsize_anim_3_l1wuvu.jpg",
 
     description:
       "I am Amzad, a seasoned Crypto Trader and Market Analyst based in Dubai. With an intricate understanding of Cryptocurrency, Blockchain, Digital Assets, Web3, and Decentralized Finance (DeFi), I bring a holistic view of the evolving digital financial landscape. My specialization lies in dissecting market trends, synthesizing complex data, and identifying lucrative opportunities within the crypto domain. My data-driven approach, paired with my unwavering commitment to continuous learning, places me at the forefront of financial innovation. I am a proud alumnus of University Brunei Darussalam, holding a Bachelor's degree in Computer Science, and I continuously bridge the intersection of technology and finance in my analyses.",
