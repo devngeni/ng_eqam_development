@@ -26,8 +26,6 @@
 }
 
 .about_wrapper{
-  /* background-color: red;  */
-  /* gap:1px; */
   display:flex;
   flex-direction: column;
 }

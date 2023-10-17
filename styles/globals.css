@@ -34,7 +34,6 @@ a {
   height: auto;
 }
 
-/* logo */
 @media screen and (min-width: 900px) {
   .blog_logo {
     display: none;
@@ -72,9 +71,7 @@ a {
   margin: 8px 0;
 }
 
-/* .article strong{
-  
-} */
+
 
 .article img {
   width: 80%;

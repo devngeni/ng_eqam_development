@@ -23,11 +23,6 @@
   display: flex;
   flex-direction: column;
   height: auto;
-  /* position: relative; */
-  /* margin-top: 3vh;
-  margin-bottom: 7vh; */
-  /* padding: 4vh 3vw; */
-  /* border-radius: 8px; */
 }
 .article_wrapper {
   width: 100%;

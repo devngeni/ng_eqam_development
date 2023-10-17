@@ -29,25 +29,22 @@ const {
 const Navbar = () => {
   const router = useRouter();
 
-  // Check if the current path is active
   const isActivePath = (path) => {
     return router.pathname === path;
   };
 
-  // Navigate to a specific path
   const NavigateToPath = (path) => {
     router.push(path);
+    setIsOpen(false); // Close the mobile menu when an item is clicked
   };
 
   const [isOpen, setIsOpen] = useState(false);
   const [isServer, setIsServer] = useState(false);
 
-  // Toggle the mobile menu
   const toggleMobileMenu = () => {
     setIsOpen(!isOpen);
   };
 
-  // Reference for handling clicks outside the mobile menu
   const modalContainerRef = useOutsideClick(toggleMobileMenu);
 
   useEffect(() => {
@@ -62,20 +59,16 @@ const Navbar = () => {
     <>
       <div className={NavContainer}>
         <div className={Nav}>
-          {/* Logo */}
           <Logo
             src="/EQLogo.png"
             alt="EQ Logo"
             onClick={() => NavigateToPath("/")}
           />
 
-          {/* Navigation buttons */}
           {navigationItems.slice(1, 7).map((item, index) => (
             <button
               key={index}
-              className={`${navButton} ${
-                isActivePath(item.path) ? active : ""
-              }`}
+              className={`${navButton} ${isActivePath(item.path) ? active : ""}`}
               onClick={() => NavigateToPath(item.path)}
             >
               {item.label}
@@ -83,14 +76,12 @@ const Navbar = () => {
           ))}
         </div>
         <div className={NavMenuIcon} onClick={toggleMobileMenu}>
-          {/* Menu Icon */}
           {isOpen ? <CloseIcon /> : <MenuIcon />}
         </div>
         {isOpen && (
           <div className={NavMobile} ref={modalContainerRef}>
             <div className={mobile_menu_arrow} />
 
-            {/* Mobile Navigation */}
             {navigationItems.map((item, index) => (
               <div key={index}>
                 <h3 onClick={() => NavigateToPath(item.path)}>{item.label}</h3>

@@ -4,7 +4,7 @@ import { EQAMLogo } from "@/components/Start/Start";
 import styles from "@/styles/Team.module.css";
 import { useEffect, useState } from "react";
 
-// Array of member data
+
 const members = [
   {
     name: "Paul Abuya",

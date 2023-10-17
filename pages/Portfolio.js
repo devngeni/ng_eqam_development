@@ -75,7 +75,6 @@ const Portfolio = () => {
       ],
     },
   ];
-  // console.log(cardData);
   return (
     <div className="ContainerWrapper">
       <div className="blog_logo">
@@ -106,15 +105,6 @@ const Portfolio = () => {
             );
           })}
         </div>
-
-        {/* <div className={style.appContainer}>
-                        <div className={style.P1container}>
-                            <div className={style.P1}>Alethea AI</div>
-                        </div>
-                        <div className={style.P2container}>
-                            <div className={style.P2}>Anything World</div>
-                        </div>
-                    </div> */}
       </div>
     </div>
   );

@@ -26,7 +26,6 @@ const Footer = () => {
   return (
     <div className={footer_container}>
       <div className={footer_copyright}>
-        {/* <span>Home</span> */}
         <h1>© {new Date().getFullYear()} EQAM CAPITAL</h1>
       </div>
       <div className={footer_wrapper}>
