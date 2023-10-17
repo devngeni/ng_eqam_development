@@ -93,6 +93,7 @@
   }
   .title {
     font-size: 30px;
+    height:auto;
   }
   .linkContainers {
     font-size: 17px;
