@@ -1,8 +1,4 @@
-/**
- * This file contains the context for the Medium API
- * It is used to fetch the latest posts from the Medium feed API
- * and then pass it down to the children components
- */
+
 import { createContext, useContext } from "react";
 
 const Mediumcontext = createContext();

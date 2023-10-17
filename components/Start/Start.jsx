@@ -5,19 +5,16 @@ import styles from "./Start.module.css";
 
 const { StartPage, EqamLogo, textWrapper } = styles;
 
-// Component for displaying a typed message
 const TypedMessage = ({ text }) => {
   const elRef = useRef(null);
 
   useEffect(() => {
-    // Initialize Typed.js with the provided text
     const typed = new Typed(elRef.current, {
       strings: [text],
       typeSpeed: 90,
       showCursor: false,
     });
 
-    // Clean up the Typed instance when the component unmounts
     return () => {
       typed.destroy();
     };
@@ -26,7 +23,6 @@ const TypedMessage = ({ text }) => {
   return <h1 ref={elRef} />;
 };
 
-// Component for displaying the EQAM logo
 export const EQAMLogo = () => {
   const [isServer, setIsServer] = useState(false);
 
@@ -43,7 +39,6 @@ export const EQAMLogo = () => {
   );
 };
 
-// Start component
 const Start = () => {
   const [isServer, setIsServer] = useState(false);
 
@@ -59,7 +54,6 @@ const Start = () => {
     <div className={StartPage}>
       <EQAMLogo />
       <div className={textWrapper}>
-        {/* Display the typed message */}
         <TypedMessage text="Empowering Your Digital Wealth Journey - Trade Crypto, Traverse Continents!" />
       </div>
     </div>
