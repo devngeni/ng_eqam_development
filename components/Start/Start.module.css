@@ -43,6 +43,11 @@
 }
 
 @media screen and (max-width: 599px) {
+  .textWrapper {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+  }
   .StartPage h1 {
     font-size: 30px;
   }

@@ -29,13 +29,14 @@ const {
 const Navbar = () => {
   const router = useRouter();
 
+  
   const isActivePath = (path) => {
     return router.pathname === path;
   };
 
+ 
   const NavigateToPath = (path) => {
     router.push(path);
-    setIsOpen(false); // Close the mobile menu when an item is clicked
   };
 
   const [isOpen, setIsOpen] = useState(false);
@@ -68,7 +69,9 @@ const Navbar = () => {
           {navigationItems.slice(1, 7).map((item, index) => (
             <button
               key={index}
-              className={`${navButton} ${isActivePath(item.path) ? active : ""}`}
+              className={`${navButton} ${
+                isActivePath(item.path) ? active : ""
+              }`}
               onClick={() => NavigateToPath(item.path)}
             >
               {item.label}
