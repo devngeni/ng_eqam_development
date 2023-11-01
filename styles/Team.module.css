@@ -6,7 +6,7 @@
 }
 
 .title {
-  color: #2C3A98;
+  color: #2c3a98;
   font-family: Inter;
   font-size: calc(1.8rem + ((1vw - 0.48rem) * 0.9722));
   font-style: normal;
@@ -32,9 +32,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  height: 800px;
-  overflow-y: scroll;
-  overflow-x: hidden;
+  height: auto;
   gap: 10px;
   padding-bottom: 20px;
   margin-top: 20px;
@@ -67,7 +65,6 @@
   backface-visibility: hidden;
   transform: rotateY(0);
   transition: transform 0.5s;
-
 }
 
 .Members_Card.flipped .CardContent,
@@ -113,7 +110,6 @@
 .MemberCardImg {
   width: 100%;
   height: 265px;
-
 }
 
 .CardContent {
@@ -132,7 +128,7 @@
 }
 
 .MemberName_title h1 {
-  color: #294EA6;
+  color: #294ea6;
   font-family: Inter;
   font-size: calc(1rem + ((1vw - 7.68px) * 0.1736));
 
